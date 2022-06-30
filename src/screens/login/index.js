@@ -7,16 +7,19 @@ export default function Login({navigation}) {
       <Text>Login</Text>
       <TouchableOpacity
         onPress={() => navigation.navigate('Home')}
-        style={{
-          paddingVertical: 10,
-          paddingHorizontal: 30,
-          backgroundColor: 'red',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}>
-        <Text>Move</Text>
+        style={styles.button}>
+        <Text style={{color: 'white'}}>Move</Text>
       </TouchableOpacity>
     </View>
   );
 }
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  button: {
+    marginTop: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+    backgroundColor: 'red',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
